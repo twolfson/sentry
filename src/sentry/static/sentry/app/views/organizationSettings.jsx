@@ -260,11 +260,11 @@ const OrganizationSettingsForm = React.createClass({
             key="scrubIPAddresses"
             name="scrubIPAddresses"
             label={t('Prevent Storing of IP Addresses')}
-            value={formData.requireDataScrubber}
+            value={formData.scrubIPAddresses}
             help={t('Preventing IP addresses from being stored for new events on all projects.')}
             required={false}
-            error={errors.requireDataScrubberDefaults}
-            onChange={this.onFieldChange.bind(this, 'requireDataScrubberDefaults')} />
+            error={errors.scrubIPAddresses}
+            onChange={this.onFieldChange.bind(this, 'scrubIPAddresses')} />
         </fieldset>
         <fieldset className="form-actions">
           <button type="submit" className="btn btn-primary"
